@@ -1,0 +1,2 @@
+azure-mgmt-resource==3.0.0
+haikunator
