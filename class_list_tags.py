@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 import os
 import json
@@ -53,12 +53,12 @@ class VMFETCH:
 
 
 def main():
-  key=input("Enter Matching Key Value:")
-  value=input("Enter Matching tag value:")
-  print ("Key {} and values {}".format(key,value)) 
+ # key=input("Enter Matching Key Value:")
+#  value=input("Enter Matching tag value:")
+ # print ("Key {} and values {}".format(key,value)) 
  
-#  objA = VMFETCH(Name="'autoscalegroup_name'",Value="'b109-azure-eastus2-region-asg1'")
-  objA = VMFETCH(Name="'"+key+"'",Value="'"+value+"'")
+  objA = VMFETCH(Name="'autoscalegroup_name'",Value="'b109-azure-eastus2-region-asg1'")
+#  objA = VMFETCH(Name="'"+key+"'",Value="'"+value+"'")
 
   vm_name=objA.run_example()
   print ("VM name matching the tag {}".format(vm_name))
