@@ -3,6 +3,7 @@ pipeline {
     environment {
         DISABLE_AUTH = 'true'
         DB_ENGINE    = 'sqlite'
+        password = credentials('password')
     }
 
     stages {
